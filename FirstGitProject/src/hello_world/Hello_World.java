@@ -6,5 +6,10 @@ public class Hello_World {
 	{
 System.out.println("helloworld");
 	}
+public void s() 
+{
+	System.out.println("added new line");
+}
+	
 
 }
