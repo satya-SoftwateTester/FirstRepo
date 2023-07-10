@@ -17,6 +17,7 @@ public class dupli_array {
 			a[i]=sc.nextInt();
 		}
 		System.out.println("Duplicate number is ");
+		System.out.println("satya");
 		for(int i=0;i<n;i++) 
 		{
 			for(int j=i+1;j<n;j++) 
