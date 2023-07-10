@@ -2,11 +2,11 @@ package prat;
 
 import java.util.Scanner;
 
-public class array_element_enter {
+public class right_shift {
 
 	public static void main(String[] args) 
 	{
-		int n,temp;
+		int n;
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter the size of array");
 		n=sc.nextInt();
@@ -17,13 +17,17 @@ public class array_element_enter {
 			arr[i]=sc.nextInt();
 
 		}
+		int temp=arr[n-1];
+		for(int i=n-1;i>0;i--) 
+		{
+			arr[i]=arr[i-1];
+			
+		}
+		arr[0]=temp;
 		for(int i=0;i<n;i++) 
 		{
 			System.out.println(arr[i]);
-			System.out.println(i);
-			System.out.println("satya");
 		}
-
 	}
 
 }
