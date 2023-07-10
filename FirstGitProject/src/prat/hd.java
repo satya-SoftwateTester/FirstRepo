@@ -22,6 +22,7 @@ int s=a-b;
 System.out.println("substraction of these is "+s);
 int mod=a%b;
 System.out.println("modulus of two number is "+mod);
+
 	}
 
 }
