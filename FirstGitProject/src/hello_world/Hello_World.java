@@ -4,7 +4,9 @@ public class Hello_World {
 
 	public static void main(String[] args) 
 	{
-System.out.println("helloworld");
+
+Hello_World x=new Hello_World();
+x.s();
 	}
 public void s() 
 {
