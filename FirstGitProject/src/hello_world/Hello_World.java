@@ -11,6 +11,7 @@ x.s();
 public void s() 
 {
 	System.out.println("added new line");
+	System.out.println("hgh");
 }
 	
 
