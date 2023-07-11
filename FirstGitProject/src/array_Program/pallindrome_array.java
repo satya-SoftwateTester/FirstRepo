@@ -1,4 +1,4 @@
-package prat;
+package array_Program;
 
 import java.util.Scanner;
 
