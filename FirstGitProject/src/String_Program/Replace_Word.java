@@ -2,24 +2,23 @@ package String_Program;
 
 import java.util.Scanner;
 
-public class Insert_word {
+public class Replace_Word {
 
 	public static void main(String[] args) 
 	{
-
 		String str;
 		Scanner sc=new Scanner (System.in);
-		System.out.println("Emter a string");
+		System.out.println("Enter a string");
 		str=sc.nextLine();
 		char[]arr=str.toCharArray();
-		System.out.println("Enter which element you want to enter after that");
+		System.out.println("Enter which element you want insert instead of this");
 		String str1=sc.nextLine();
-		char []arr1=str1.toCharArray();
-		System.out.println("Enter a string that you want to insert");
+		char[] arr1=str1.toCharArray();
+		System.out.println("Enter the element");
 		String str2=sc.nextLine();
 		char[]arr2=str2.toCharArray();
-		int index=0;
 		int count=0;
+		int index=0;
 		for(int i=0;i<arr.length;i++) 
 		{
 			count=0;
@@ -34,29 +33,19 @@ public class Insert_word {
 					break;
 				}
 			}
+			index=i;
 			if(count==arr1.length) 
 			{
-				index=i;
-				for(int k=0;k<=arr2.length;k++) 
+				for(int l=0;l<arr2.length;l++) 
 				{
-					for(int l=arr.length-1;l>i+count;l--) 
-					{
-						arr[l]=arr[l-1];
-					}
+					arr[index]=arr2[l];
+					index++;
 				}
-				break;
 			}
-		}
-		index=index+count+1;
-		for(int i=0;i<arr2.length;i++) 
-		{
-			arr[index]=arr2[i];
-			index++;
 		}
 		for(int i=0;i<arr.length;i++) 
 		{
 			System.out.print(arr[i]);
-			
 		}
 	}
 
